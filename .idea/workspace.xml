@@ -50,12 +50,32 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HangmanTest.startingDisplayWord">
+  <component name="RunManager" selected="JUnit.HangmanTest">
     <configuration name="HangmanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HangmanTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HangmanTest.incorrectGuessIsStored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hangman-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HangmanTest" />
+      <option name="METHOD_NAME" value="incorrectGuessIsStored" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HangmanTest.incorrectGuessLeavesDisplayWordUnchanged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hangman-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HangmanTest" />
+      <option name="METHOD_NAME" value="incorrectGuessLeavesDisplayWordUnchanged" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -66,15 +86,6 @@
       <option name="MAIN_CLASS_NAME" value="HangmanTest" />
       <option name="METHOD_NAME" value="startingDisplayWord" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hangman-project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InputManagerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,10 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HangmanTest.startingDisplayWord" />
         <item itemvalue="JUnit.HangmanTest" />
+        <item itemvalue="JUnit.HangmanTest.incorrectGuessIsStored" />
+        <item itemvalue="JUnit.HangmanTest.incorrectGuessLeavesDisplayWordUnchanged" />
+        <item itemvalue="JUnit.HangmanTest.startingDisplayWord" />
         <item itemvalue="JUnit.InputManagerTest.characterInput" />
-        <item itemvalue="JUnit.InputManagerTest" />
       </list>
     </recent_temporary>
   </component>

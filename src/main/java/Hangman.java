@@ -3,6 +3,8 @@ public class Hangman {
     private String word = "hello";
     private String displayWord = "_".repeat(word.length());
 
+    private String incorrectGuesses = "";
+
     public String getWord() {
         return word;
     }
@@ -11,9 +13,16 @@ public class Hangman {
         return displayWord;
     }
 
+    public String getIncorrectGuesses() {
+        return incorrectGuesses;
+    }
+
     public void checkPlayerGuess(String guess) {
         int index = word.indexOf(guess);
-        if (index == -1) return;
+        if (index == -1) {
+            incorrectGuesses += guess;
+            return;
+        }
         updateDisplayWord(index, guess);
     }
 
