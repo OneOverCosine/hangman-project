@@ -15,4 +15,15 @@ public class HangmanTest {
         String word = testHangman.getWord();
         assertEquals(word.length(), testHangman.getDisplayWord().length());
     }
+
+    @Test
+    public void displayWordUpdatesOnCorrectGuess() {
+        Hangman testHangman = new Hangman();
+        String testGuessFirstLetter = testHangman.getWord().substring(0, 1);
+
+        testHangman.checkPlayerGuess(testGuessFirstLetter);
+        String firstDisplayWordLetter = testHangman.getDisplayWord().substring(0, 1);
+
+        assertEquals(testGuessFirstLetter, firstDisplayWordLetter);
+    }
 }

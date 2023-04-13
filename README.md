@@ -20,7 +20,7 @@ defined. The best way to get good at that is by starting with a simple task like
 - [ ] As a player, so that I can see the state of the game, I'd like info like remaining guesses, guessed letters and the like logged to the console
     - [x] As a player, so that I can play the game, I would like a word to guess
     - [x] As a player, so that I can play the game, I'd like to know how many letters I need to guess
-    - [ ] As a player, so that I can play the game, I'd like to know when I've guessed correctly
+    - [x] As a player, so that I can play the game, I'd like to know when I've guessed correctly
     - [ ] As a player, so that I can play the game, I'd like to know when I've guessed *incorrectly*
     - [ ] As a player, so that I won't guess the same letter twice, I'd like to know which letters have been guessed already
     - [ ] As a player, so that I know when to be cautious, I want to know how many guesses I have left
@@ -42,11 +42,14 @@ As a player, so that I can interact with the game, I'd like to use the keyboard 
 ```
 As a player, so that I can play the game, I would like a word to guess
 As a player, so that I can play the game, I'd like to know how many letters I need to guess
+As a player, so that I can play the game, I'd like to know when I've guessed correctly
 ```
-| Objects   | Properties          | Messages       | Outputs |
-|-----------|---------------------|----------------|---------|
-| Hangman   | word @String        | getWord()      | @String |
-|           | displayWord @String | getDisplayWord | @String |
+| Objects | Properties          | Messages                   | Outputs |
+|---------|---------------------|----------------------------|---------|
+| Hangman | word @String        | getWord()                  | @String |
+|         | displayWord @String | getDisplayWord()           | @String |
+|         |                     | checkPlayerGuess(@String)  | Void    |
+|         |                     | updateDisplayWord(@String) | Void    |
 
 ### Tests
 - Character/letter input prompt
@@ -54,4 +57,4 @@ As a player, so that I can play the game, I'd like to know how many letters I ne
 - No input on character/letter prompt
 - Hangman starts with a word to guess
 - Hangman starts with display word where underscores represent missing letters
-- 
+- Correct guess replaces underscore with guessed letter
