@@ -9,7 +9,14 @@ public class InputManagerTest {
     @Test
     public void characterInput() {
         String testInput = "1";
-        ByteArrayInputStream in = new ByteArrayInputStream(testInput.getBytes());
-        assertEquals(testInput, InputManager.getInput(in, ""));
+        ByteArrayInputStream input = new ByteArrayInputStream(testInput.getBytes());
+        assertEquals(testInput, InputManager.getInput(input, ""));
+    }
+
+    @Test
+    public void singleCharacterValidation() {
+        String testInput = "*";
+        ByteArrayInputStream input = new ByteArrayInputStream(testInput.getBytes());
+        assertEquals("Invalid input", InputManager.getInput(input, ""));
     }
 }

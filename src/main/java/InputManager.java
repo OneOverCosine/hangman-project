@@ -1,9 +1,19 @@
 import java.io.InputStream;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class InputManager {
     public static String getInput(InputStream input, String message) {
         Scanner in = new Scanner(input);
-        return in.nextLine();
+        String userInput = in.nextLine();
+        if(inputValid(userInput)) return userInput;
+        return "Invalid input";
+    }
+
+    public static Boolean inputValid(String userInput) {
+        Pattern pattern = Pattern.compile("[A-Za-z0-9]");
+        Matcher matcher = pattern.matcher(userInput);
+        return matcher.find();
     }
 }

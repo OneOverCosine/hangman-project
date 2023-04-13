@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ddfa45b-e233-43f1-98b5-224f10e794f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InputManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,16 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.InputManagerTest">
+    <configuration name="InputManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hangman-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InputManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InputManagerTest.characterInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
@@ -64,6 +72,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InputManagerTest" />
         <item itemvalue="JUnit.InputManagerTest.characterInput" />
       </list>
     </recent_temporary>

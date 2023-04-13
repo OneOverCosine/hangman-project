@@ -15,7 +15,7 @@ While not really necessary for a small project like this, creating user stories 
 help with the development process. Any work done will keep you moving in the right direction if the stories are well-  
 defined. The best way to get good at that is by starting with a simple task like this.
 
-### User Stories, Domain Models
+### User Stories
 - As a player, so that I can interact with the game, I would like to use the keyboard to make inputs
 - As a player, so that I can see the state of the game, I would like info like remaining guesses, guessed letters and the like logged to the console
 - As a player, so that it's clear how many letters are in the mystery word, I'd like to see an underscore for each hidden letter
@@ -25,7 +25,7 @@ defined. The best way to get good at that is by starting with a simple task like
 ---
 - As a player, so that the game doesn't get boring, I'd like the computer to chose from a variety of English (GB) words
 
-**Domain Models**
+### Domain Models
 ```
 As a player, so that I can interact with the game, I would like to use the keyboard to make inputs
 ```
