@@ -19,7 +19,7 @@ defined. The best way to get good at that is by starting with a simple task like
 - [x] As a player, so that I can interact with the game, I'd like to use the keyboard to make inputs
 - [ ] As a player, so that I can see the state of the game, I'd like info like remaining guesses, guessed letters and the like logged to the console
     - [x] As a player, so that I can play the game, I would like a word to guess
-    - [ ] As a player, so that I can play the game, I'd like to know how many letters I need to guess
+    - [x] As a player, so that I can play the game, I'd like to know how many letters I need to guess
     - [ ] As a player, so that I can play the game, I'd like to know when I've guessed correctly
     - [ ] As a player, so that I can play the game, I'd like to know when I've guessed *incorrectly*
     - [ ] As a player, so that I won't guess the same letter twice, I'd like to know which letters have been guessed already
@@ -41,13 +41,17 @@ As a player, so that I can interact with the game, I'd like to use the keyboard 
 ---
 ```
 As a player, so that I can play the game, I would like a word to guess
+As a player, so that I can play the game, I'd like to know how many letters I need to guess
 ```
-| Objects   | Properties     | Messages  | Outputs |
-|-----------|----------------|-----------|---------|
-| Hangman   | word (@String) | getWord() | @String |
+| Objects   | Properties          | Messages       | Outputs |
+|-----------|---------------------|----------------|---------|
+| Hangman   | word @String        | getWord()      | @String |
+|           | displayWord @String | getDisplayWord | @String |
 
 ### Tests
 - Character/letter input prompt
 - Only accept A-Z, a-z, and digits
 - No input on character/letter prompt
 - Hangman starts with a word to guess
+- Hangman starts with display word where underscores represent missing letters
+- 
