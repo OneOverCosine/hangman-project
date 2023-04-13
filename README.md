@@ -29,9 +29,10 @@ defined. The best way to get good at that is by starting with a simple task like
 ```
 As a player, so that I can interact with the game, I would like to use the keyboard to make inputs
 ```
-| Objects      | Properties | Messages                        | Outputs |
-|--------------|------------|---------------------------------|---------|
-| InputManager |            | getInput(@InputStream, @String) | @String |
+| Objects      | Properties | Messages                        | Outputs   |
+|--------------|------------|---------------------------------|-----------|
+| InputManager |            | getInput(@InputStream, @String) | @String   |
+|              |            | isValid(@String)                |  @Boolean |
 
 ### Tests
 - Character/letter input prompt

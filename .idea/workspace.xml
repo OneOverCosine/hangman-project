@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ddfa45b-e233-43f1-98b5-224f10e794f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" afterDir="false" />
@@ -50,7 +49,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.InputManagerTest">
+  <component name="RunManager" selected="JUnit.InputManagerTest.characterInput">
     <configuration name="InputManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
@@ -72,8 +71,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InputManagerTest" />
         <item itemvalue="JUnit.InputManagerTest.characterInput" />
+        <item itemvalue="JUnit.InputManagerTest" />
       </list>
     </recent_temporary>
   </component>

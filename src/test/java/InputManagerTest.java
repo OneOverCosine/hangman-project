@@ -19,4 +19,10 @@ public class InputManagerTest {
         ByteArrayInputStream input = new ByteArrayInputStream(testInput.getBytes());
         assertEquals("Invalid input", InputManager.getInput(input, ""));
     }
+
+    @Test
+    public void emptyInputIsInvalid() {
+        ByteArrayInputStream input = new ByteArrayInputStream("".getBytes());
+        assertEquals("Invalid input", InputManager.getInput(input, ""));
+    }
 }

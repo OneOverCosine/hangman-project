@@ -7,11 +7,11 @@ public class InputManager {
     public static String getInput(InputStream input, String message) {
         Scanner in = new Scanner(input);
         String userInput = in.nextLine();
-        if(inputValid(userInput)) return userInput;
+        if(isValid(userInput)) return userInput;
         return "Invalid input";
     }
 
-    public static Boolean inputValid(String userInput) {
+    public static Boolean isValid(String userInput) {
         Pattern pattern = Pattern.compile("[A-Za-z0-9]");
         Matcher matcher = pattern.matcher(userInput);
         return matcher.find();
