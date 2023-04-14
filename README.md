@@ -17,7 +17,7 @@ defined. The best way to get good at that is by starting with a simple task like
 
 ### User Stories
 - [x] As a player, so that I can interact with the game, I'd like to use the keyboard to make inputs
-- [x] As a player, so that I can know the state of the game, I'd to have access info like to remaining guesses, guessed letters, etc
+- [x] As a player, so that I can know the state of the game, I'd like to have access info like to remaining guesses, guessed letters, etc
     - [x] As a player, so that I can play the game, I would like a word to guess
     - [x] As a player, so that I can play the game, I'd like to know how many letters I need to guess
     - [x] As a player, so that I can play the game, I'd like to know when I've guessed correctly
@@ -27,6 +27,8 @@ defined. The best way to get good at that is by starting with a simple task like
         - [x] As the system, so that I can show the player their remaining guesses, I want to calculate the number of incorrect guesses made 
         - [x] As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
 - [ ] As a player, so that I can see the state of the game, I'll like the current game info logged to the console
+    - [ ] As a player, so that I can start a game, I'd like to see that option in a menu
+    - [ ] As a player, so that I know what to do next, I'd like to see the state of the current game
 ---
 - [ ] As a player, so that the game doesn't get boring, I'd like the computer to chose from a variety of English (GB) words
 
@@ -46,25 +48,25 @@ As a player, so that I can play the game, I'd like to know when I've guessed cor
 As a player, so that I can play the game, I'd like to know when I've guessed *incorrectly*
 As a player, so that I won't guess the same letter twice, I'd like to know which letters have been guessed already
 As the system, so that I can show the player their remaining guesses, I want to calculate the number of incorrect guesses made
-
 ```
 | Objects | Properties               | Messages                   | Outputs  |
 |---------|--------------------------|----------------------------|----------|
 | Hangman | word @String             | getWord()                  | @String  |
 |         | displayWord @String      | getDisplayWord()           | @String  |
 |         | incorrectGuesses @String | checkPlayerGuess(@String)  | Void     |
-|         | hangedManState @String   | updateDisplayWord(@String) | Void     |
+|         |                          | updateDisplayWord(@String) | Void     |
 |         |                          | getIncorrectGuesses()      | @String  |
-|         |                          | getIncorrectGuessCount()   | @Integer |
-|         |                          |                            |          |
+|         |                          | incorrectGuessCount()      | @Integer |
 
 ```
 As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
+As a player, so that I can start a game, I'd like to see that option in a menu
 ```
-| Objects        | Properties               | Messages              | Outputs   |
-|----------------|--------------------------|-----------------------|-----------|
-| Hangman        | hangedManStates[@String] | getHangedMan()        | @String   |
-| HangmanManager |                          | loadHangedManStates() | [@String] |
+| Objects        | Properties               | Messages               | Outputs   |
+|----------------|--------------------------|------------------------|-----------|
+| HangmanManager |                          | getHangedMan(@Integer) | @String   |
+|                | hangedManStates[@String] | homeMenu(@InputStream) | Void      |
+|                | homeMenuText @String     | loadHangedManStates()  | [@String] |
 
 ---
 ### Tests

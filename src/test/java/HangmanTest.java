@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.jar.JarEntry;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -54,7 +52,7 @@ public class HangmanTest {
         String testGuess = "z";
 
         testHangman.checkPlayerGuess(testGuess);
-        assertEquals(1, testHangman.getIncorrectGuessCount());
+        assertEquals(1, testHangman.incorrectGuessCount());
     }
 
     @Test

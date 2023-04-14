@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HangmanManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HangmanManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HangmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +51,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HangmanTest.hangedManUpdatesAfterIncorrectGuess">
+  <component name="RunManager" selected="JUnit.HangmanTest">
     <configuration name="HangmanManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,10 +102,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HangmanTest" />
         <item itemvalue="JUnit.HangmanTest.hangedManUpdatesAfterIncorrectGuess" />
         <item itemvalue="JUnit.HangmanManagerTest.hangmanStatesLoadWithCorrectFormat" />
         <item itemvalue="JUnit.HangmanManagerTest" />
-        <item itemvalue="JUnit.HangmanTest" />
         <item itemvalue="JUnit.HangmanTest.incorrectGuessIsStored" />
       </list>
     </recent_temporary>

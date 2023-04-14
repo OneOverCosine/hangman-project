@@ -3,6 +3,9 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class HangmanManager {
+
+    private static final String[] hangedManStates = loadHangedManStates();
+
     public static String[] loadHangedManStates(){
         StringBuilder fileOutput = new StringBuilder();
         try{
@@ -11,9 +14,12 @@ public class HangmanManager {
             while (reader.hasNextLine()) fileOutput.append(reader.nextLine());
         }
         catch (FileNotFoundException e) {
-            System.out.println("An error occurred");
             e.printStackTrace();
         }
         return fileOutput.toString().split("\\.");
+    }
+
+    public static String getCurrentHangedMan(int incorrectGuessCount) {
+        return hangedManStates[incorrectGuessCount];
     }
 }

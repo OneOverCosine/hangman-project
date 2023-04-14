@@ -3,7 +3,7 @@ public class Hangman {
     private String word = "hello";
     private String displayWord = "_".repeat(word.length());
     private String incorrectGuesses = "";
-    private final String[] hangedManStates = HangmanManager.loadHangedManStates();
+    //private final String[] hangedManStates = HangmanManager.loadHangedManStates();
 
     public String getWord() {
         return word;
@@ -17,12 +17,12 @@ public class Hangman {
         return incorrectGuesses;
     }
 
-    public int getIncorrectGuessCount() {
+    public int incorrectGuessCount() {
         return incorrectGuesses.length();
     }
 
     public String getHangedMan() {
-        return hangedManStates[getIncorrectGuessCount()];
+        return HangmanManager.getCurrentHangedMan(incorrectGuessCount());
     }
 
     public void checkPlayerGuess(String guess) {
