@@ -40,8 +40,17 @@ public class HangmanTest {
     public void incorrectGuessIsStored() {
         Hangman testHangman = new Hangman();
         String testGuess = "z";
-        testHangman.checkPlayerGuess(testGuess);
 
+        testHangman.checkPlayerGuess(testGuess);
         assertEquals(testGuess, testHangman.getIncorrectGuesses());
+    }
+
+    @Test
+    public void incorrectGuessIsCounted() {
+        Hangman testHangman = new Hangman();
+        String testGuess = "z";
+
+        testHangman.checkPlayerGuess(testGuess);
+        assertEquals(1, testHangman.getIncorrectGuessCount());
     }
 }

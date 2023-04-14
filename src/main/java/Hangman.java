@@ -17,6 +17,10 @@ public class Hangman {
         return incorrectGuesses;
     }
 
+    public int getIncorrectGuessCount() {
+        return incorrectGuesses.length();
+    }
+
     public void checkPlayerGuess(String guess) {
         int index = word.indexOf(guess);
         if (index == -1) {
