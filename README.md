@@ -25,9 +25,7 @@ defined. The best way to get good at that is by starting with a simple task like
     - [x] As a player, so that I won't guess the same letter twice, I'd like to know which letters have been guessed already
     - [ ] As a player, so that I know when to be cautious, I want to know how many guesses I have left
         - [x] As the system, so that I can show the player their remaining guesses, I want to calculate the number of incorrect guesses made 
-        - [ ] As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man 
-- ~~[ ] As a player, so that it's clear how many letters are in the mystery word, I'd like to see an underscore for each hidden letter~~
-- ~~[ ] As a player, so that I can see my correct guesses, I'd like the underscore to be replaced by the letter in the correct place~~
+        - [ ] As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
 ---
 - [ ] As a player, so that the game doesn't get boring, I'd like the computer to chose from a variety of English (GB) words
 
@@ -39,7 +37,7 @@ As a player, so that I can interact with the game, I'd like to use the keyboard 
 |--------------|------------|---------------------------------|----------|
 | InputManager |            | getInput(@InputStream, @String) | @String  |
 |              |            | isValid(@String)                | @Boolean |
----
+
 ```
 As a player, so that I can play the game, I would like a word to guess
 As a player, so that I can play the game, I'd like to know how many letters I need to guess
@@ -47,23 +45,41 @@ As a player, so that I can play the game, I'd like to know when I've guessed cor
 As a player, so that I can play the game, I'd like to know when I've guessed *incorrectly*
 As a player, so that I won't guess the same letter twice, I'd like to know which letters have been guessed already
 As the system, so that I can show the player their remaining guesses, I want to calculate the number of incorrect guesses made
-```
-| Objects | Properties               | Messages                   | Outputs   |
-|---------|--------------------------|----------------------------|-----------|
-| Hangman | word @String             | getWord()                  | @String   |
-|         | displayWord @String      | getDisplayWord()           | @String   |
-|         | incorrectGuesses @String | checkPlayerGuess(@String)  | Void      |
-|         |                          | updateDisplayWord(@String) | Void      |
-|         |                          | getIncorrectGuesses()      | @String   |
-|         |                          | getIncorrectGuessCount()   | @Integer  |
 
+```
+| Objects | Properties               | Messages                   | Outputs  |
+|---------|--------------------------|----------------------------|----------|
+| Hangman | word @String             | getWord()                  | @String  |
+|         | displayWord @String      | getDisplayWord()           | @String  |
+|         | incorrectGuesses @String | checkPlayerGuess(@String)  | Void     |
+|         | hangedManState @String   | updateDisplayWord(@String) | Void     |
+|         |                          | getIncorrectGuesses()      | @String  |
+|         |                          | getIncorrectGuessCount()   | @Integer |
+|         |                          |                            |          |
+
+```
+As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
+```
+| Objects        | Properties               | Messages              | Outputs   |
+|----------------|--------------------------|-----------------------|-----------|
+| Hangman        | hangedManStates[@String] | getHangedMan()        | @String   |
+| HangmanManager |                          | loadHangedManStates() | [@String] |
+
+---
 ### Tests
+
+**InputManager**  
 - Character/letter input prompt
 - Only accept A-Z, a-z, and digits
 - No input on character/letter prompt
+
+**Hangman**  
 - Hangman starts with a word to guess
 - Hangman starts with display word where underscores represent missing letters
 - Correct guess replaces underscore with guessed letter
 - Incorrect guess leaves display word unchanged
 - Incorrect guess is stored
 - Can get number of incorrect guesses
+
+**HangmanManager**  
+- Load hangman states in correct format

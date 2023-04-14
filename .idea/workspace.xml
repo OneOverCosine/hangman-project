@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ddfa45b-e233-43f1-98b5-224f10e794f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/hangmanStates.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HangmanManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HangmanManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,26 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HangmanTest">
+  <component name="RunManager" selected="JUnit.HangmanManagerTest.hangmanStatesLoadWithCorrectFormat">
+    <configuration name="HangmanManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hangman-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HangmanManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HangmanManagerTest.hangmanStatesLoadWithCorrectFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hangman-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HangmanManagerTest" />
+      <option name="METHOD_NAME" value="hangmanStatesLoadWithCorrectFormat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HangmanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,33 +100,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HangmanTest.startingDisplayWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hangman-project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HangmanTest" />
-      <option name="METHOD_NAME" value="startingDisplayWord" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputManagerTest.characterInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hangman-project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InputManagerTest" />
-      <option name="METHOD_NAME" value="characterInput" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HangmanManagerTest.hangmanStatesLoadWithCorrectFormat" />
+        <item itemvalue="JUnit.HangmanManagerTest" />
         <item itemvalue="JUnit.HangmanTest" />
         <item itemvalue="JUnit.HangmanTest.incorrectGuessIsStored" />
         <item itemvalue="JUnit.HangmanTest.incorrectGuessLeavesDisplayWordUnchanged" />
-        <item itemvalue="JUnit.HangmanTest.startingDisplayWord" />
-        <item itemvalue="JUnit.InputManagerTest.characterInput" />
       </list>
     </recent_temporary>
   </component>
