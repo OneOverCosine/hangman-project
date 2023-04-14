@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ddfa45b-e233-43f1-98b5-224f10e794f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hangmanStates.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HangmanManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HangmanManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HangmanManagerTest.hangmanStatesLoadWithCorrectFormat">
+  <component name="RunManager" selected="JUnit.HangmanTest.hangedManUpdatesAfterIncorrectGuess">
     <configuration name="HangmanManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,6 +79,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HangmanTest.hangedManUpdatesAfterIncorrectGuess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hangman-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HangmanTest" />
+      <option name="METHOD_NAME" value="hangedManUpdatesAfterIncorrectGuess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HangmanTest.incorrectGuessIsStored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
@@ -90,23 +99,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HangmanTest.incorrectGuessLeavesDisplayWordUnchanged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hangman-project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HangmanTest" />
-      <option name="METHOD_NAME" value="incorrectGuessLeavesDisplayWordUnchanged" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HangmanTest.hangedManUpdatesAfterIncorrectGuess" />
         <item itemvalue="JUnit.HangmanManagerTest.hangmanStatesLoadWithCorrectFormat" />
         <item itemvalue="JUnit.HangmanManagerTest" />
         <item itemvalue="JUnit.HangmanTest" />
         <item itemvalue="JUnit.HangmanTest.incorrectGuessIsStored" />
-        <item itemvalue="JUnit.HangmanTest.incorrectGuessLeavesDisplayWordUnchanged" />
       </list>
     </recent_temporary>
   </component>

@@ -2,8 +2,8 @@ public class Hangman {
 
     private String word = "hello";
     private String displayWord = "_".repeat(word.length());
-
     private String incorrectGuesses = "";
+    private final String[] hangedManStates = HangmanManager.loadHangedManStates();
 
     public String getWord() {
         return word;
@@ -19,6 +19,10 @@ public class Hangman {
 
     public int getIncorrectGuessCount() {
         return incorrectGuesses.length();
+    }
+
+    public String getHangedMan() {
+        return hangedManStates[getIncorrectGuessCount()];
     }
 
     public void checkPlayerGuess(String guess) {

@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.jar.JarEntry;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 public class HangmanTest {
     @Test
@@ -52,5 +55,15 @@ public class HangmanTest {
 
         testHangman.checkPlayerGuess(testGuess);
         assertEquals(1, testHangman.getIncorrectGuessCount());
+    }
+
+    @Test
+    public void hangedManUpdatesAfterIncorrectGuess() {
+        Hangman testHangman = new Hangman();
+        String initialState = testHangman.getHangedMan();
+        String testGuess = "z";
+
+        testHangman.checkPlayerGuess(testGuess);
+        assertFalse(initialState.equals(testHangman.getHangedMan()));
     }
 }
