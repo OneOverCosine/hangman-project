@@ -22,7 +22,7 @@ public class Hangman {
     }
 
     public String getHangedMan() {
-        return HangmanManager.getCurrentHangedMan(incorrectGuessCount());
+        return HangmanHelper.getCurrentHangedMan(incorrectGuessCount());
     }
 
     public void checkPlayerGuess(String guess) {

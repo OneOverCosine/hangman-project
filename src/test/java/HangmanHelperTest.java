@@ -2,10 +2,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-public class HangmanManagerTest {
+public class HangmanHelperTest {
     @Test
     public void hangmanStatesLoadWithCorrectFormat() {
-        String[] testStates = HangmanManager.loadHangedManStates();
+        String[] testStates = HangmanHelper.loadHangedManStates();
         String expected = "|\\n" +
                 "|\\n" +
                 "|\\n" +

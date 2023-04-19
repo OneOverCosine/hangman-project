@@ -62,11 +62,11 @@ As the system, so that I can show the player their remaining guesses, I want to 
 As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
 As a player, so that I can start a game, I'd like to see that option in a menu
 ```
-| Objects        | Properties               | Messages               | Outputs   |
-|----------------|--------------------------|------------------------|-----------|
-| HangmanManager |                          | getHangedMan(@Integer) | @String   |
-|                | hangedManStates[@String] | homeMenu(@InputStream) | Void      |
-|                | homeMenuText @String     | loadHangedManStates()  | [@String] |
+| Objects        | Properties                | Messages               | Outputs   |
+|----------------|---------------------------|------------------------|-----------|
+| HangmanHelper  |                           | getHangedMan(@Integer) | @String   |
+|                | hangedManStates [@String] | homeMenu(@InputStream) | Void      |
+|                | homeMenuText @String      | loadHangedManStates()  | [@String] |
 
 ---
 ### Tests
@@ -85,5 +85,7 @@ As a player, so that I can start a game, I'd like to see that option in a menu
 - Can get number of incorrect guesses
 - Displayed hanged man depends on number of incorrect guesses
 
-**HangmanManager**  
+**HangmanHelper**  
 - Load hangman states in correct format
+
+Some testing was left out as I was unable to set up Mockito for use with spying.
