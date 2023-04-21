@@ -26,6 +26,9 @@ defined. The best way to get good at that is by starting with a simple task like
     - [x] As a player, so that I know when to be cautious, I want to know how many guesses I have left
         - [x] As the system, so that I can show the player their remaining guesses, I want to calculate the number of incorrect guesses made 
         - [x] As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
+
+*These stories gave me a bit of trouble in terms of testing. I couldn't figure out how to mock functions/ get method  
+spying to work. I went with manual testing in the end.  
 - [ ] As a player, so that I can see the state of the game, I'll like the current game info logged to the console
     - [ ] As a player, so that I can start a game, I'd like to see that option in a menu
     - [ ] As a player, so that I know what to do next, I'd like to see the state of the current game
@@ -49,27 +52,28 @@ As a player, so that I can play the game, I'd like to know when I've guessed *in
 As a player, so that I won't guess the same letter twice, I'd like to know which letters have been guessed already
 As the system, so that I can show the player their remaining guesses, I want to calculate the number of incorrect guesses made
 ```
-| Objects | Properties               | Messages                   | Outputs  |
-|---------|--------------------------|----------------------------|----------|
-| Hangman | word @String             | getWord()                  | @String  |
-|         | displayWord @String      | getDisplayWord()           | @String  |
-|         | incorrectGuesses @String | checkPlayerGuess(@String)  | Void     |
-|         |                          | updateDisplayWord(@String) | Void     |
-|         |                          | getIncorrectGuesses()      | @String  |
-|         |                          | incorrectGuessCount()      | @Integer |
+| Objects | Properties                 | Messages                   | Outputs  |
+|---------|----------------------------|----------------------------|----------|
+| Hangman | word @String               | getWord()                  | @String  |
+|         | displayWord @String        | getDisplayWord()           | @String  |
+|         | incorrectGuesses @String   | checkPlayerGuess(@String)  | Void     |
+|         | hangedManStates [@String]  | updateDisplayWord(@String) | Void     |
+|         |                            | getIncorrectGuesses()      | @String  |
+|         |                            | incorrectGuessCount()      | @Integer |
 
 ```
 As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
 As a player, so that I can start a game, I'd like to see that option in a menu
 ```
-| Objects        | Properties                | Messages               | Outputs   |
-|----------------|---------------------------|------------------------|-----------|
-| HangmanHelper  |                           | getHangedMan(@Integer) | @String   |
-|                | hangedManStates [@String] | homeMenu(@InputStream) | Void      |
-|                | homeMenuText @String      | loadHangedManStates()  | [@String] |
+| Objects        | Properties           | Messages                   | Outputs     |
+|----------------|----------------------|----------------------------|-------------|
+| HangmanHelper  |                      | ~~getHangedMan(@Integer)~~ | ~~@String~~ |
+|                |                      | homeMenu(@InputStream)     | Void        |
+|                | homeMenuText @String | loadHangedManStates()      | [@String]   |
 
 ---
 ### Tests
+Manual tests are marked with `[m]`
 
 **InputManager**  
 - Character/letter input prompt
@@ -87,5 +91,3 @@ As a player, so that I can start a game, I'd like to see that option in a menu
 
 **HangmanHelper**  
 - Load hangman states in correct format
-
-Some testing was left out as I was unable to set up Mockito for use with spying.

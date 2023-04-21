@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ddfa45b-e233-43f1-98b5-224f10e794f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/menu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hangmanStates.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/hangmanStates.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/hangmanStates.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/hangmanStates.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/menu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/menu.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HangmanManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HangmanHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HangmanHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HangmanHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanHelperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,14 @@
       <recent name="E:\Work\Personal\repos\hangman-project\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HangmanHelperTest">
+  <component name="RunManager" selected="Application.Runner">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <module name="hangman-project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HangmanHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,23 +110,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HangmanTest.incorrectGuessIsStored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hangman-project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HangmanTest" />
-      <option name="METHOD_NAME" value="incorrectGuessIsStored" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.HangmanHelperTest" />
         <item itemvalue="JUnit.HangmanHelperTest.hangmanStatesLoadWithCorrectFormat" />
         <item itemvalue="JUnit.HangmanTest" />
         <item itemvalue="JUnit.HangmanTest.hangedManUpdatesAfterIncorrectGuess" />
-        <item itemvalue="JUnit.HangmanTest.incorrectGuessIsStored" />
       </list>
     </recent_temporary>
   </component>

@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class HangmanHelper {
 
-    private static final String[] hangedManStates = loadHangedManStates();
+    static final String menu = loadMenu();
 
-    public static String[] loadHangedManStates(){
+    public static String[] loadHangedManStates() {
         StringBuilder fileOutput = loadFile("hangmanStates.txt");
         return fileOutput.toString().split("\\.");
     }
 
-    public static String getCurrentHangedMan(int incorrectGuessCount) {
-        return hangedManStates[incorrectGuessCount];
+    public static String loadMenu() {
+        return String.valueOf(loadFile("menu.txt"));
     }
 
     private static StringBuilder loadFile(String filename) {

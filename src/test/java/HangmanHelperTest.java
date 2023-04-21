@@ -6,10 +6,10 @@ public class HangmanHelperTest {
     @Test
     public void hangmanStatesLoadWithCorrectFormat() {
         String[] testStates = HangmanHelper.loadHangedManStates();
-        String expected = "|\\n" +
-                "|\\n" +
-                "|\\n" +
-                "|\\n" +
+        String expected = "|%n" +
+                "|%n" +
+                "|%n" +
+                "|%n" +
                 "|___";
 
         assertTrue(expected.equals(testStates[0]));

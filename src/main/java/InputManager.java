@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 public class InputManager {
     public static String getInput(InputStream input, String message) {
+        System.out.printf(message);
         Scanner in = new Scanner(input);
         String userInput = in.nextLine();
         if(isValid(userInput)) return userInput;
@@ -12,6 +13,7 @@ public class InputManager {
     }
 
     public static Boolean isValid(String userInput) {
+        // this needs work
         Pattern pattern = Pattern.compile("[A-Za-z0-9]");
         Matcher matcher = pattern.matcher(userInput);
         return matcher.find();
