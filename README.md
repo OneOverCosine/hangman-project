@@ -78,7 +78,7 @@ Manual tests are marked with `[m]`
 **InputManager**  
 - Character/letter input prompt
 - Only accept A-Z, a-z, and digits
-- No input on character/letter prompt
+- No input on character/letter prompt [m]
 
 **Hangman**  
 - Hangman starts with a word to guess

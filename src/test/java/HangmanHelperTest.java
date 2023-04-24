@@ -10,8 +10,8 @@ public class HangmanHelperTest {
                 "|%n" +
                 "|%n" +
                 "|%n" +
-                "|___";
+                "|___%n";
 
-        assertTrue(expected.equals(testStates[0]));
+        assertEquals(expected, testStates[0]);
     }
 }

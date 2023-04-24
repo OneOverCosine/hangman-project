@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1ddfa45b-e233-43f1-98b5-224f10e794f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <recent name="E:\Work\Personal\repos\hangman-project\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HangmanTest">
+  <component name="RunManager" selected="JUnit.InputManagerTest">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="hangman-project" />
@@ -65,11 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HangmanHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HangmanHelperTest.hangmanStatesLoadWithCorrectFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HangmanHelperTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="hangmanStatesLoadWithCorrectFormat" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,21 +85,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HangmanTest.hangmanStartsWithWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HangmanTest" />
-      <option name="METHOD_NAME" value="hangmanStartsWithWord" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="InputManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HangmanTest.startingDisplayWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputManagerTest.emptyInputIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hangman-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HangmanTest" />
-      <option name="METHOD_NAME" value="startingDisplayWord" />
+      <option name="MAIN_CLASS_NAME" value="InputManagerTest" />
+      <option name="METHOD_NAME" value="emptyInputIsInvalid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HangmanTest" />
-        <item itemvalue="JUnit.HangmanTest.startingDisplayWord" />
-        <item itemvalue="JUnit.HangmanTest.hangmanStartsWithWord" />
+        <item itemvalue="JUnit.InputManagerTest" />
+        <item itemvalue="JUnit.InputManagerTest.emptyInputIsInvalid" />
         <item itemvalue="Application.Runner" />
-        <item itemvalue="JUnit.HangmanHelperTest" />
+        <item itemvalue="JUnit.HangmanHelperTest.hangmanStatesLoadWithCorrectFormat" />
+        <item itemvalue="JUnit.HangmanTest" />
       </list>
     </recent_temporary>
   </component>

@@ -14,7 +14,7 @@ public class InputManager {
 
     public static Boolean isValid(String userInput) {
         // this needs work
-        Pattern pattern = Pattern.compile("[A-Za-z0-9]");
+        Pattern pattern = Pattern.compile("^[A-Za-z0-9]");
         Matcher matcher = pattern.matcher(userInput);
         return matcher.find();
     }
