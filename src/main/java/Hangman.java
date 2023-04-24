@@ -1,19 +1,16 @@
-import java.io.InputStream;
-
 public class Hangman {
 
-    private String word = "hello";
-    private String compareWord = word;
-    private String displayWord = "_".repeat(word.length());
-    private String incorrectGuesses = "";
+    private String word;
+    private String displayWord;
+    private String incorrectGuesses;
     private final String[] hangedManStates = HangmanHelper.loadHangedManStates();
 
     public String getWord() {
         return word;
     }
 
-    public String getDisplayWord() {
-        return displayWord;
+    public String showDisplayWord() {
+        return displayWord.replace("", " ").trim();
     }
 
     public String getIncorrectGuesses() {
@@ -30,19 +27,16 @@ public class Hangman {
     }
 
     public void checkPlayerGuess(String guess) {
-        if (!compareWord.contains(guess)) {
-            incorrectGuesses += guess;
-            return;
-        }
-        updateDisplayWord(guess);
-    }
-
-    public void updateDisplayWord(String guess) {
-        for (int i = 0; i < word.length(); i++) {
-            if (word.substring(0, 1).equals(guess)) {
-                displayWord = updateWord(i, guess, displayWord);
+        do {
+            int index = this.word.indexOf(guess);
+            if (index == -1) {
+                this.incorrectGuesses += guess;
+                return;
             }
-        }
+
+            this.displayWord = updateWord(index, guess, this.displayWord);
+            this.word = updateWord(index, "_", this.word);
+        } while (this.word.contains(guess));
     }
 
     public String updateWord(int replaceFrom, String replaceWith, String word) {
@@ -57,7 +51,7 @@ public class Hangman {
             choice = InputManager.getInput(System.in, HangmanHelper.menu);
             switch (choice) {
                 case "1":
-                    play(0);
+                    play(Integer.parseInt(choice));
                     break;
                 case "2":
                     System.out.println("Play hard mode");
@@ -71,30 +65,38 @@ public class Hangman {
         }
     }
 
-    public boolean gameOver() {
-        return this.word.equals(this.displayWord) || incorrectGuessCount() == this.hangedManStates.length;
+    public int gameOver() {
+        if (this.word.equals("_".repeat(this.word.length()))) return 2;
+        else if (incorrectGuessCount() == this.hangedManStates.length) return 1;
+        return 0;
     }
 
     public String currentGameState() {
-        StringBuilder currentState = new StringBuilder();
-        currentState.append(getHangedMan());
-        currentState.append(this.displayWord);
-        currentState.append(" || Incorrect guesses: ");
-        currentState.append(incorrectGuesses);
-        currentState.append("%n%nYour guess: ");
-        return currentState.toString();
+        return getHangedMan() +
+                showDisplayWord() + " || Incorrect guesses: " + incorrectGuesses +
+                "%n%nYour guess: ";
+    }
+
+    public void setup(int difficulty) {
+        this.word = "hello";  // will use difficulty to get
+        this.displayWord = "_".repeat(this.word.length());
+        this.incorrectGuesses = "";
     }
 
     public void play(int difficulty) {
         // get word based on difficulty
+        setup(difficulty);
 
         // do the following until the word is guessed correctly or the incorrect guesses reach 8
-        while(!gameOver()) {
+        while(gameOver() == 0) {
             // 1. show the current game state 2. let the player make a guess
             String input = InputManager.getInput(System.in, currentGameState());
             // 3. check the guess
             checkPlayerGuess(input);
             // 4. update the state as needed
         }
+
+        if (gameOver() == 1) System.out.println("\nYou lose");
+        else System.out.println("\nYou win!");
     }
 }

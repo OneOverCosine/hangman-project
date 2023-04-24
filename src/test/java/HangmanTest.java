@@ -14,7 +14,7 @@ public class HangmanTest {
     public void startingDisplayWord() {
         Hangman testHangman = new Hangman();
         String word = testHangman.getWord();
-        assertEquals(word.length(), testHangman.getDisplayWord().length());
+        assertEquals(word.length(), testHangman.showDisplayWord().length());
     }
 
     @Test
@@ -23,7 +23,7 @@ public class HangmanTest {
         String testGuessFirstLetter = testHangman.getWord().substring(0, 1);
 
         testHangman.checkPlayerGuess(testGuessFirstLetter);
-        String firstDisplayWordLetter = testHangman.getDisplayWord().substring(0, 1);
+        String firstDisplayWordLetter = testHangman.showDisplayWord().substring(0, 1);
 
         assertEquals(testGuessFirstLetter, firstDisplayWordLetter);
     }
@@ -31,10 +31,10 @@ public class HangmanTest {
     @Test
     public void incorrectGuessLeavesDisplayWordUnchanged() {
         Hangman testHangman = new Hangman();
-        String initialDisplayWord = testHangman.getDisplayWord();
+        String initialDisplayWord = testHangman.showDisplayWord();
 
         testHangman.checkPlayerGuess("z");
-        assertTrue(initialDisplayWord.equals(testHangman.getDisplayWord()));
+        assertTrue(initialDisplayWord.equals(testHangman.showDisplayWord()));
     }
 
     @Test
