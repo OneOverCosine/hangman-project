@@ -9,21 +9,23 @@ public class Hangman {
         return word;
     }
 
-    public String showDisplayWord() {
-        return displayWord.replace("", " ").trim();
-    }
+    public String getDisplayWord() {return displayWord;}
 
     public String getIncorrectGuesses() {
         return incorrectGuesses;
+    }
+
+    public String getHangedMan() {
+        // might not need this
+        return hangedManStates[incorrectGuessCount()];
     }
 
     public int incorrectGuessCount() {
         return incorrectGuesses.length();
     }
 
-    public String getHangedMan() {
-        // might not need this
-        return hangedManStates[incorrectGuessCount()];
+    public String showDisplayWord() {
+        return displayWord.replace("", " ").trim();
     }
 
     public void checkPlayerGuess(String guess) {
