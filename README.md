@@ -35,50 +35,32 @@ spying to work. I went with manual testing in the end.
 ---
 - [ ] As a player, so that the game doesn't get boring, I'd like the computer to chose from a variety of English (GB) words
 
-### Domain Models
-```
-As a player, so that I can interact with the game, I'd like to use the keyboard to make inputs
-```
-| Objects      | Properties | Messages                        | Outputs  |
-|--------------|------------|---------------------------------|----------|
-| InputManager |            | getInput(@InputStream, @String) | @String  |
-|              |            | isValid(@String)                | @Boolean |
+### Domain Model
 
-```
-As a player, so that I can play the game, I would like a word to guess
-As a player, so that I can play the game, I'd like to know how many letters I need to guess
-As a player, so that I can play the game, I'd like to know when I've guessed correctly
-As a player, so that I can play the game, I'd like to know when I've guessed *incorrectly*
-As a player, so that I won't guess the same letter twice, I'd like to know which letters have been guessed already
-As the system, so that I can show the player their remaining guesses, I want to calculate the number of incorrect guesses made
-```
-| Objects | Properties                      | Messages                               | Outputs  |
-|---------|---------------------------------|----------------------------------------|----------|
-| Hangman | word @String                    | getWord()                              | @String  |
-|         | displayWord @String             | getDisplayWord()                       | @String  |
-|         | initialWord @String             | getIncorrectGuesses()                  | @String  |
-|         | incorrectGuesses @String        | getHangedMan()                         | @String  |
-|         | hangedManStates @Array[@String] | checkPlayerGuess(@String)              | Void     |
-|         |                                 | incorrectGuessCount()                  | @Integer |
-|         |                                 | showDisplayWord(@String)               | Void     |
-|         |                                 | checkPlayerGuess(@String)              | Void     |
-|         |                                 | updateWord(@Integer, @String, @String) | @String  |
-|         |                                 | mainMenu()                             | Void     |
-|         |                                 | gameOver()                             | @Integer |
-|         |                                 | currentGameState()                     | @String  |
-|         |                                 | setup()                                | Void     |
-|         |                                 | play()                                 | Void     | 
-
-```
-As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
-As a player, so that I can start a game, I'd like to see that option in a menu
-```
-| Objects       | Properties            | Messages              | Outputs         |
-|---------------|-----------------------|-----------------------|-----------------|
-| HangmanHelper | menu @String          | loadHangedManStates() | @Array[@String] |
-|               | words @Array[@String] | loadMenu()            | @String         |
-|               |                       | loadWords()           | @Array[@String] |
-|               |                       | loadFile(@String)     | @StringBuilder  |
+| Objects       | Properties                      | Messages                               | Outputs         |
+|---------------|---------------------------------|----------------------------------------|-----------------|
+| InputManager  |                                 | getInput(@InputStream, @String)        | @String         |
+|               |                                 | isValid(@String)                       | @Boolean        |
+|               |                                 |                                        |                 |
+| Hangman       | word @String                    | getWord()                              | @String         |
+|               | displayWord @String             | getDisplayWord()                       | @String         |
+|               | initialWord @String             | getIncorrectGuesses()                  | @String         |
+|               | incorrectGuesses @String        | getHangedMan()                         | @String         |
+|               | hangedManStates @Array[@String] | checkPlayerGuess(@String)              | Void            |
+|               |                                 | incorrectGuessCount()                  | @Integer        |
+|               |                                 | showDisplayWord(@String)               | Void            |
+|               |                                 | checkPlayerGuess(@String)              | Void            |
+|               |                                 | updateWord(@Integer, @String, @String) | @String         |
+|               |                                 | mainMenu()                             | Void            |
+|               |                                 | gameOver()                             | @Integer        |
+|               |                                 | currentGameState()                     | @String         |
+|               |                                 | setup()                                | Void            |
+|               |                                 | play()                                 | Void            |
+|               |                                 |                                        |                 |
+| HangmanHelper | menu @String                    | loadHangedManStates()                  | @Array[@String] |
+|               | words @Array[@String]           | loadMenu()                             | @String         |
+|               |                                 | loadWords()                            | @Array[@String] |
+|               |                                 | loadFile(@String)                      | @StringBuilder  |
 
 ---
 ### Tests
@@ -99,3 +81,11 @@ As a player, so that I can start a game, I'd like to see that option in a menu
 
 **HangmanHelper**  
 - Load hangman states in correct format
+
+## Final Thoughts
+
+### Known Issues
+I may or may not fix these in the future. I just wanted to move on before I spent the next month on something  
+I only wanted to spend two weeks on.
+
+- While guessing, an empty input throws an exception.
