@@ -52,33 +52,41 @@ As a player, so that I can play the game, I'd like to know when I've guessed *in
 As a player, so that I won't guess the same letter twice, I'd like to know which letters have been guessed already
 As the system, so that I can show the player their remaining guesses, I want to calculate the number of incorrect guesses made
 ```
-| Objects | Properties                 | Messages                   | Outputs  |
-|---------|----------------------------|----------------------------|----------|
-| Hangman | word @String               | getWord()                  | @String  |
-|         | displayWord @String        | getDisplayWord()           | @String  |
-|         | incorrectGuesses @String   | checkPlayerGuess(@String)  | Void     |
-|         | hangedManStates [@String]  | updateDisplayWord(@String) | Void     |
-|         |                            | getIncorrectGuesses()      | @String  |
-|         |                            | incorrectGuessCount()      | @Integer |
+| Objects | Properties                      | Messages                               | Outputs  |
+|---------|---------------------------------|----------------------------------------|----------|
+| Hangman | word @String                    | getWord()                              | @String  |
+|         | displayWord @String             | getDisplayWord()                       | @String  |
+|         | initialWord @String             | getIncorrectGuesses()                  | @String  |
+|         | incorrectGuesses @String        | getHangedMan()                         | @String  |
+|         | hangedManStates @Array[@String] | checkPlayerGuess(@String)              | Void     |
+|         |                                 | incorrectGuessCount()                  | @Integer |
+|         |                                 | showDisplayWord(@String)               | Void     |
+|         |                                 | checkPlayerGuess(@String)              | Void     |
+|         |                                 | updateWord(@Integer, @String, @String) | @String  |
+|         |                                 | mainMenu()                             | Void     |
+|         |                                 | gameOver()                             | @Integer |
+|         |                                 | currentGameState()                     | @String  |
+|         |                                 | setup()                                | Void     |
+|         |                                 | play()                                 | Void     | 
 
 ```
 As a player, so that I can see how many incorrect guesses are left, I'd like a visual representation of the hanged stick-man
 As a player, so that I can start a game, I'd like to see that option in a menu
 ```
-| Objects        | Properties           | Messages                   | Outputs     |
-|----------------|----------------------|----------------------------|-------------|
-| HangmanHelper  |                      | ~~getHangedMan(@Integer)~~ | ~~@String~~ |
-|                |                      | homeMenu(@InputStream)     | Void        |
-|                | homeMenuText @String | loadHangedManStates()      | [@String]   |
+| Objects       | Properties            | Messages              | Outputs         |
+|---------------|-----------------------|-----------------------|-----------------|
+| HangmanHelper | menu @String          | loadHangedManStates() | @Array[@String] |
+|               | words @Array[@String] | loadMenu()            | @String         |
+|               |                       | loadWords()           | @Array[@String] |
+|               |                       | loadFile(@String)     | @StringBuilder  |
 
 ---
 ### Tests
-Manual tests are marked with `[m]`
 
 **InputManager**  
 - Character/letter input prompt
 - Only accept A-Z, a-z, and digits
-- No input on character/letter prompt [m]
+- ~~No input on character/letter prompt~~
 
 **Hangman**  
 - Hangman starts with a word to guess
