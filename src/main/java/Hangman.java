@@ -1,5 +1,6 @@
 public class Hangman {
 
+    private String initialWord;
     private String word;
     private String displayWord;
     private String incorrectGuesses;
@@ -49,16 +50,13 @@ public class Hangman {
 
     public void mainMenu() {
         String choice = "";
-        while (!"3".equals(choice)) {
+        while (!"2".equals(choice)) {
             choice = InputManager.getInput(System.in, HangmanHelper.menu);
             switch (choice) {
                 case "1":
-                    play(Integer.parseInt(choice));
+                    play();
                     break;
                 case "2":
-                    System.out.println("Play hard mode");
-                    break;
-                case "3":
                     System.out.println("Closing game");
                     break;
                 default:
@@ -79,26 +77,22 @@ public class Hangman {
                 "%n%nYour guess: ";
     }
 
-    public void setup(int difficulty) {
-        this.word = "hello";  // will use difficulty to get
+    public void setup() {
+        this.initialWord = HangmanHelper.getWord();
+        this.word = this.initialWord;
         this.displayWord = "_".repeat(this.word.length());
         this.incorrectGuesses = "";
     }
 
-    public void play(int difficulty) {
-        // get word based on difficulty
-        setup(difficulty);
+    public void play() {
+        setup();
 
-        // do the following until the word is guessed correctly or the incorrect guesses reach 8
         while(gameOver() == 0) {
-            // 1. show the current game state 2. let the player make a guess
             String input = InputManager.getInput(System.in, currentGameState());
-            // 3. check the guess
             checkPlayerGuess(input);
-            // 4. update the state as needed
         }
 
-        if (gameOver() == 1) System.out.println("\nYou lose");
-        else System.out.println("\nYou win!");
+        if (gameOver() == 1) System.out.println("\nYou lose. The correct word was " + this.initialWord);
+        else System.out.println("\nThe word was " + this.initialWord + ". You win!");
     }
 }

@@ -9,7 +9,7 @@ public class HangmanTest {
     @BeforeEach
     void init() {
         testHangman = new Hangman();
-        testHangman.setup(0);
+        testHangman.setup();
     }
 
     @Test

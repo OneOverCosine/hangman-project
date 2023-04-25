@@ -1,1 +1,1 @@
-=== HANGMAN ===%n1. Normal mode%n2. Hard mode%n3. Exit%n
+=== HANGMAN ===%n1. Play%n2. Exit%n

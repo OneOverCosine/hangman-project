@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ddfa45b-e233-43f1-98b5-224f10e794f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/normal_words.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanHelperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InputManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/menu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/menu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HangmanHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HangmanHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,7 @@
       <recent name="E:\Work\Personal\repos\hangman-project\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InputManagerTest">
+  <component name="RunManager" selected="JUnit.HangmanTest">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="hangman-project" />
@@ -106,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HangmanTest" />
+        <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.InputManagerTest" />
         <item itemvalue="JUnit.InputManagerTest.emptyInputIsInvalid" />
-        <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.HangmanHelperTest.hangmanStatesLoadWithCorrectFormat" />
-        <item itemvalue="JUnit.HangmanTest" />
       </list>
     </recent_temporary>
   </component>
