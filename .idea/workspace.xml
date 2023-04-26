@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ddfa45b-e233-43f1-98b5-224f10e794f5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +56,7 @@
       <recent name="E:\Work\Personal\repos\hangman-project\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HangmanTest">
+  <component name="RunManager" selected="Application.Runner">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="hangman-project" />
@@ -103,8 +104,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HangmanTest" />
         <item itemvalue="Application.Runner" />
+        <item itemvalue="JUnit.HangmanTest" />
         <item itemvalue="JUnit.InputManagerTest" />
         <item itemvalue="JUnit.InputManagerTest.emptyInputIsInvalid" />
         <item itemvalue="JUnit.HangmanHelperTest.hangmanStatesLoadWithCorrectFormat" />
