@@ -90,3 +90,4 @@ I only wanted to spend two weeks on. For the moment, most of these issues are to
 
 - While guessing, an empty input throws an exception.
 - While guessing, multiple characters are allowed as input - it's only supposed to accept one.
+- While guessing, uppercase letters aren't converted to lowercase.

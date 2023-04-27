@@ -17,7 +17,6 @@ public class Hangman {
     }
 
     public String getHangedMan() {
-        // might not need this
         return hangedManStates[incorrectGuessCount()];
     }
 
